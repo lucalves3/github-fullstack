@@ -12,17 +12,21 @@ const apiUsers = async (req, res) => {
     });
 
     FirstIdUser = data[0].id;
+    LastIdUser = data[29].id;
     let nextPage = headers.link;
-    nextPage = nextPage.split(',');
-    since = nextPage[0].replace(/[^0-9]/g,'');
-    let objectResult = [
-      {
-        firstIdUser: FirstIdUser,
-        next_page: since,
-        data,
-      }
-    ]
-    console.log(nextPage)
+    nextPage = nextPage.split(',')
+    let linkFinal = nextPage[0].replace('>; rel=\"next\"','').replace('<', '');
+    since = LastIdUser;
+
+    let objectResult ={ 
+        models: {
+          firstIdUser: FirstIdUser,
+          lastIdUser: LastIdUser,
+          next_page: since,
+          next_page_link: linkFinal,
+          data,
+      }}
+
     return res.status(200).json(objectResult);
   } catch (error) {
     console.log(error.message)
