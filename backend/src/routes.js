@@ -1,8 +1,12 @@
 const express = require('express');
-const apiUsers = require('./Controllers/UsersController');
+const apiUsersByPagination = require('./Controllers/ApiUsersByPagination');
+const ApiUsersFindByName = require('./Controllers/ApiUsersFindByName');
+const apiUsersFindRepos = require('./Controllers/ApiUsersFindRepos');
 
 const router = express.Router();
 
-router.get('/api/users', apiUsers);
+router.get('/api/users', apiUsersByPagination);
+router.get('/api/users/:username/repos', apiUsersFindRepos);
+router.get('/api/users/:username/details', ApiUsersFindByName);
 
 module.exports = router;

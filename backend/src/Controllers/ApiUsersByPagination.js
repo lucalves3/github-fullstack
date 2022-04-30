@@ -1,7 +1,7 @@
 const axios = require('axios');
 require('dotenv').config();
 
-const apiUsers = async (req, res) => {
+const apiUsersByPagination = async (req, res) => {
   let { since } = req.query
 
   try {
@@ -34,4 +34,4 @@ const apiUsers = async (req, res) => {
   }
 }
 
-module.exports = apiUsers;
+module.exports = apiUsersByPagination;
