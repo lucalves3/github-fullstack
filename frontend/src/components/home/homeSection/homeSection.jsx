@@ -21,7 +21,7 @@ const HomeSection = () => {
       }
     }
     getApi();
-  }, [pagination]);
+  }, [pagination, setPreviousPagination, usersData?.models?.firstIdUser]);
  
   console.log(usersData?.models);
 
