@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SearchSectionSTL = styled.main`
+const SearchSectionSTL = styled.section`
 background-color: #2D3047;
 display: flex;
 align-items: center;
@@ -9,6 +9,7 @@ width: 100%;
 height: 100%;
 
 form {
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,17 +21,25 @@ form {
 .search-bar {
   width: 300px;
   height: 30px;
-  border: none;
+  border: 1px solid #43DAEF;
   border-radius: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
   background-color: #464B70;
   color: #43DAEF;
 }
 
 .icon-img {
   z-index: 1;
+  margin-left: -15px;
   width: 20px;
-  margin-left: -30px;
   cursor: pointer;
+}
+
+.searchImage {
+  margin-top: 50px;
+  width: 350px;
+  /* height: 100vh; */
 }
 `;
 

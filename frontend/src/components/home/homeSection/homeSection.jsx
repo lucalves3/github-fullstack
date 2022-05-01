@@ -11,7 +11,7 @@ const HomeSection = () => {
   useEffect(() => {
     async function getApi() {
       try {
-        const { data } = await api.get(`/api/users?since=${pagination}`);
+        const { data } = await api.get(`?since=${pagination}`);
         if (data) {
           setPreviousPagination(usersData?.models?.firstIdUser);
           setUsersData(data);

@@ -12,7 +12,7 @@ const ApiUsersFindByName = async (req, res) => {
     });
 
     let objectResult ={ 
-        models: {
+        model: {
           data,
       }}
 
