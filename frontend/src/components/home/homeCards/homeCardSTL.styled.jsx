@@ -16,7 +16,7 @@ section {
   width: 150px;
   height: 200px;
   background-color: #464B70;
-  margin: 30px;
+  margin: 10px;
 }
 
 p {

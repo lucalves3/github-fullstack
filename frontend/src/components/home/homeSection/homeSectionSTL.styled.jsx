@@ -8,6 +8,12 @@ background-color: #2D3047;
 flex-wrap: wrap;
 align-items: center;
 justify-content: center;
+
+.skeletons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 `;
 
 export default HomeSectionSTL;
