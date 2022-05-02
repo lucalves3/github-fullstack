@@ -22,4 +22,4 @@ cd backend
 cd frontend
 ```
 
-**Follow the README on the folder backend**
+**Follow the README on the folder frontend**
