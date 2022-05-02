@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import SearchCardSTL from './searchCardSTL.styled';
 
 const SearchCard = ({ image, id, url, followers, following, repos, name, location, bio }) => {
