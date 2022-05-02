@@ -14,7 +14,7 @@ const apiUsersFindRepos = async (req, res) => {
     Quantity = data.length;
 
     let objectResult ={ 
-        models: {
+        model: {
           quantity: Quantity,
           data,
       }}
