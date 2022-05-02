@@ -24,7 +24,7 @@ const RepositoriesSection = () => {
     <RepositoriesSectionSTL>
       <section>
           <form className='search-container'>
-            <input type="search" className="search-bar" placeholder='Search for a user' onBlur={(e) => setGetName(e.target.value)} />
+            <input type="search" className="search-bar" placeholder='Search for a user repositories' onBlur={(e) => setGetName(e.target.value)} />
             <img src={searchIcon} alt="search icon" className='icon-img' onClick={() => setUserName(getName)}/>
           </form>
           <div style={{ display: 'flex', width: '100%', height: '100%', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-around' }}>
